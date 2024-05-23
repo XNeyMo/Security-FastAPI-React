@@ -13,6 +13,7 @@ app = FastAPI()
 origins = [
     "http://localhost:3000",
     "https://liav.netlify.app",
+    "https://securityfastapireact.netlify.app",
 ]
 
 app.add_middleware(

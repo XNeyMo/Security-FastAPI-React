@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/product/all', {
+        const response = await axios.get('https://security-fastapi-react.onrender.com/product/all', {
           headers: {
             'Authorization': `Bearer ${process.env.REACT_APP_API_TOKEN}`, // Usa el token definido en el archivo .env
           }
